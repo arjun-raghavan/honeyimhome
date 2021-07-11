@@ -1,0 +1,34 @@
+{
+    "monthFav":{
+        "title": "Favorite of the Month",
+        "subTitle": "Chocolate Cheesecake",
+        "description": "No bake, No gelatin, eggless, without spring form pam, No bake, No gelatin, eggless, without spring form pam",
+        "imageSrc": "https://maryzkitchen.com/wp-content/uploads/2020/06/101887999_3074414372602163_3232137033983983616_n.jpg",
+        "imageAltText": "Chocolate CheeseCake"
+    },
+    "carouselImages": [
+        {
+          "original": "https://picsum.photos/id/1018/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1018/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1015/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1015/250/150/"
+        },
+        {
+          "original": "https://picsum.photos/id/1019/1000/600/",
+          "thumbnail": "https://picsum.photos/id/1019/250/150/"
+        }
+      ],
+      "trendingRecipes": {
+          "title": "Trending Recipes",
+          "youTubeIds": ["nEa2Ex49xnM", "TJ5DtwAPbFA"]},
+      "cooking": {
+        "title": "What's Cooking ?",
+        "subTitle": "Sweet & Spicy Chicken",
+        "description": "One Pot Dish | Quick Stir | LESS OIL",
+        "buttonTitle": "View Recipe",
+        "buttonLink": "",
+        "youTubeId": "k1F9qTSEods" 
+      }
+}
