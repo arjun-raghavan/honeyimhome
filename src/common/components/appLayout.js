@@ -12,18 +12,25 @@ const useStyles = makeStyles((theme) => ({
 export default function AppLayout(props) {
   return (
     <>
-      <Box bgcolor='primary.main' display='flex' flexDirection='row-reverse'>
+      <Box
+        bgcolor='primary.main'
+        display='flex'
+        flexDirection='row-reverse'
+        height='59px'
+      >
         <Container maxWidth='lg'>
           <SocialMedia />
         </Container>
       </Box>
-      {props.children}
+      <Box bgcolor='background.primary'>
+        <Container maxWidth='lg'>{props.children}</Container>
+      </Box>
       <Box
         bgcolor='primary.main'
         color='primary.contrastText'
         display='flex'
         justifyContent='center'
-        p={1}
+        p={2}
       >
         @ 2021 Honey I'm Home
       </Box>

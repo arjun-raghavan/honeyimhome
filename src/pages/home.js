@@ -43,48 +43,46 @@ export default function Home() {
   const { monthFav, carouselImages, trendingRecipes, cooking } = homeData;
   return (
     <AppLayout>
-      <Container maxWidth='lg'>
-        <Grid container>
-          <Grid container item spacing={4} justify='flex-start'>
-            <Box clone order={{ xs: 2, md: 1 }}>
-              <Grid item xs={12} lg={3}>
-                <ImageWithInfo data={monthFav} />
-              </Grid>
-            </Box>
-            <Box clone order={{ xs: 1, md: 2 }}>
-              <Grid item xs={12} lg={6}>
-                <Box mt={isDesktop ? 8 : 0}>
-                  <ImageGallery
-                    items={carouselImages}
-                    autoPlay={true}
-                    showBullets={true}
-                    showNav={false}
-                    showThumbnails={false}
-                    showPlayButton={false}
-                    showFullscreenButton={false}
-                    fullscreen
-                  />
-                </Box>
-              </Grid>
-            </Box>
-            <Box clone order={3}>
-              <Grid item xs={12} lg={3}>
-                <MediaCardList data={trendingRecipes} />
-              </Grid>
-            </Box>
-          </Grid>
-          <Divider
-            variant='middle'
-            orientation='horizontal'
-            className={classes.divider}
-          />
-          <Grid container item>
-            <Grid item xs={12}>
-              <YouTubeCard data={cooking} />
+      <Grid container>
+        <Grid container item spacing={4} justify='flex-start'>
+          <Box clone order={{ xs: 2, md: 1 }}>
+            <Grid item xs={12} lg={3}>
+              <ImageWithInfo data={monthFav} />
             </Grid>
+          </Box>
+          <Box clone order={{ xs: 1, md: 2 }}>
+            <Grid item xs={12} lg={6}>
+              <Box mt={isDesktop ? 8 : 0}>
+                <ImageGallery
+                  items={carouselImages}
+                  autoPlay={true}
+                  showBullets={true}
+                  showNav={false}
+                  showThumbnails={false}
+                  showPlayButton={false}
+                  showFullscreenButton={false}
+                  fullscreen
+                />
+              </Box>
+            </Grid>
+          </Box>
+          <Box clone order={3}>
+            <Grid item xs={12} lg={3}>
+              <MediaCardList data={trendingRecipes} />
+            </Grid>
+          </Box>
+        </Grid>
+        <Divider
+          variant='middle'
+          orientation='horizontal'
+          className={classes.divider}
+        />
+        <Grid container item>
+          <Grid item xs={12}>
+            <YouTubeCard data={cooking} />
           </Grid>
         </Grid>
-      </Container>
+      </Grid>
     </AppLayout>
   );
 }

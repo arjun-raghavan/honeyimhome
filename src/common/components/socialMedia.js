@@ -6,16 +6,52 @@ import PinterestIcon from '@material-ui/icons/Pinterest';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import Link from '@material-ui/core/Link';
 
-export default function SocialMedia(props) {
-  const MediaLink = (props) => {
-    const { path, children } = props;
-    return (
-      <Link href={path} color='inherit' target='_blank' rel='noopener'>
-        {children}
-      </Link>
-    );
-  };
+const MediaLink = (props) => {
+  const { path, children } = props;
+  return (
+    <Link href={path} color='inherit' target='_blank' rel='noopener'>
+      {children}
+    </Link>
+  );
+};
 
+export const Facebook = () => {
+  return (
+    <MediaLink path='https://www.facebook.com/'>
+      <FacebookIcon />
+    </MediaLink>
+  );
+};
+
+export const Instagram = () => {
+  return (
+    <MediaLink path='https://www.instagram.com/'>
+      <InstagramIcon />
+    </MediaLink>
+  );
+};
+export const Twitter = () => {
+  return (
+    <MediaLink path='https://twitter.com/?lang=en'>
+      <TwitterIcon />
+    </MediaLink>
+  );
+};
+export const Pinterest = () => {
+  return (
+    <MediaLink path='https://in.pinterest.com/'>
+      <PinterestIcon />
+    </MediaLink>
+  );
+};
+export const YouTubeLink = () => {
+  return (
+    <MediaLink path='https://www.YouTube.com/'>
+      <YouTubeIcon />
+    </MediaLink>
+  );
+};
+export default function SocialMedia(props) {
   return (
     <>
       <Box
@@ -28,21 +64,11 @@ export default function SocialMedia(props) {
         ml={'auto'}
         p={1}
       >
-        <MediaLink path='https://www.facebook.com/'>
-          <FacebookIcon />
-        </MediaLink>
-        <MediaLink path='https://www.instagram.com/'>
-          <InstagramIcon />
-        </MediaLink>
-        <MediaLink path='https://twitter.com/?lang=en'>
-          <TwitterIcon />
-        </MediaLink>
-        <MediaLink path='https://in.pinterest.com/'>
-          <PinterestIcon />
-        </MediaLink>
-        <MediaLink path='https://www.youtube.com/'>
-          <YouTubeIcon />
-        </MediaLink>
+        <Facebook />
+        <Instagram />
+        <Twitter />
+        <Pinterest />
+        <YouTubeLink />
       </Box>
     </>
   );

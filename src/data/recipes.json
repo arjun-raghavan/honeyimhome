@@ -1,0 +1,38 @@
+{
+    "sections": [
+        {
+            "title":" Baking - Breads, Buns, cakes",
+            "cards": [
+                {
+                    "title": "BlueBerry Muffins",
+                    "description": " Some Description",
+                    "instagramLink": "https://instagram.com",
+                    "youTubeId": "https://youTube.com",
+                    "recipeBtnTitle": "View Recipe"
+                },
+                {
+                    "title": "BlueBerry Muffins",
+                    "description": " Some Description",
+                    "instagramLink": "https://instagram.com",
+                    "youTubeId": "https://youTube.com",
+                    "recipeBtnTitle": "View Recipe"
+                },
+                {
+                    "title": "BlueBerry Muffins",
+                    "description": " Some Description",
+                    "instagramLink": "https://instagram.com",
+                    "youTubeId": "https://youTube.com",
+                    "recipeBtnTitle": "View Recipe"
+                },
+                {
+                    "title": "BlueBerry Muffins",
+                    "description": " Some Description",
+                    "instagramLink": "https://instagram.com",
+                    "youTubeId": "https://youTube.com",
+                    "recipeBtnTitle": "View Recipe"
+                }
+
+            ]
+        }
+    ]
+}
