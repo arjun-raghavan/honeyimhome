@@ -21,10 +21,10 @@ const theme = createMuiTheme({
     background: {
       default: '#fff',
       primary: '#faf9f7',
-      secondary: '#eeeff3',
+      secondary: '#869fae4a',
     },
     text: {
-      primary: '#A99987',
+      primary: '#444',
       secondary: '#57696d',
     },
   },

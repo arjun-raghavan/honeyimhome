@@ -1,39 +1,29 @@
-import Box from '@material-ui/core/Box';
-import Container from '@material-ui/core/Container';
-import { makeStyles } from '@material-ui/core/styles';
-import SocialMedia from './socialMedia';
+import Box from "@material-ui/core/Box";
+import Container from "@material-ui/core/Container";
+import { makeStyles } from "@material-ui/core/styles";
+import NewNav from "./navBar/newNav";
+import SocialMedia from "./socialMedia";
 
 const useStyles = makeStyles((theme) => ({
-  mediaContainer: {
-    marginRight: '0px',
+  footer: {
+    display: "flex",
+    justifyContent: "center",
+    padding: "10px",
+    background: theme.palette.background.secondary,
+    width: "100vw",
+    position: "relative",
+    marginLeft: "-50vw",
+    left: "50%",
   },
 }));
 
 export default function AppLayout(props) {
+  const classes = useStyles();
   return (
     <>
-      <Box
-        bgcolor='primary.main'
-        display='flex'
-        flexDirection='row-reverse'
-        height='59px'
-      >
-        <Container maxWidth='lg'>
-          <SocialMedia />
-        </Container>
-      </Box>
-      <Box bgcolor='background.primary'>
-        <Container maxWidth='lg'>{props.children}</Container>
-      </Box>
-      <Box
-        bgcolor='primary.main'
-        color='primary.contrastText'
-        display='flex'
-        justifyContent='center'
-        p={2}
-      >
-        @ 2021 Honey I'm Home
-      </Box>
+      <NewNav/>
+      <Container maxWidth="lg">{props.children}</Container>
+      <div className={classes.footer}>@ 2021 Honey I'm Home</div>
     </>
   );
 }

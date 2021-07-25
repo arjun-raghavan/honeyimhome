@@ -61,8 +61,10 @@ export default function SocialMedia(props) {
         justifyContent='space-between'
         width='200px'
         mr={0}
+        mt={0.5}
+        mb={0.5}
         ml={'auto'}
-        p={1}
+        padding="7px"
       >
         <Facebook />
         <Instagram />

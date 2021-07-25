@@ -30,10 +30,9 @@ export default function RecipeReviewCard(props) {
         alignItems='center'
         textAlign='center'
         flex={1}
-        padding={1}
       >
         <CursiveHeading content={title} showDivider />
-        <Box display={{ xs: 'none', lg: 'block' }}>
+        <Box display={{ xs: 'block',sm: 'none', lg: 'block' }}>
           <CardImage />
         </Box>
         <Typography variant='h6' fontWeight='fontWeightBold' gutterBottom>
@@ -41,7 +40,7 @@ export default function RecipeReviewCard(props) {
         </Typography>
         <Typography variant='body1'>{description}</Typography>
       </Box>
-      <Box display={{ md: 'block', lg: 'none' }} width='100%' flex={1}>
+      <Box display={{ xs: 'none', sm: 'block', lg: 'none' }} width='100%' flex={1}>
         <CardImage />
       </Box>
     </Box>

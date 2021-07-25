@@ -5,6 +5,7 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import reportWebVitals from "./reportWebVitals";
 import theme from "./theme";
 import App from "./App";
+
 import "./index.css";
 
 ReactDOM.render(
@@ -14,7 +15,6 @@ ReactDOM.render(
       <CssBaseline />
       <App />
     </ThemeProvider>
-    ,
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
@@ -43,16 +42,15 @@ export default function Home() {
   const { monthFav, carouselImages, trendingRecipes, cooking } = homeData;
   return (
     <AppLayout>
-      <Grid container>
-        <Grid container item spacing={4} justify='flex-start'>
-          <Box clone order={{ xs: 2, md: 1 }}>
+        <Grid container item spacing={3} justify='flex-start'>
+          <Box clone order={{ xs: 2, lg: 1 }}>
             <Grid item xs={12} lg={3}>
               <ImageWithInfo data={monthFav} />
             </Grid>
           </Box>
-          <Box clone order={{ xs: 1, md: 2 }}>
+          <Box clone order={{ xs: 1, lg: 2 }}>
             <Grid item xs={12} lg={6}>
-              <Box mt={isDesktop ? 8 : 0}>
+              <Box >
                 <ImageGallery
                   items={carouselImages}
                   autoPlay={true}
@@ -82,7 +80,6 @@ export default function Home() {
             <YouTubeCard data={cooking} />
           </Grid>
         </Grid>
-      </Grid>
     </AppLayout>
   );
 }
