@@ -31,7 +31,10 @@ const useStyles = makeStyles((theme) => ({
   },
   empty: {
     position: 'relative',
-    minHeight: "100px",
+    minHeight: "85px",
+    [theme.breakpoints.up('lg')]: {
+      minHeight: "100px",
+    },
   },
 }));
 

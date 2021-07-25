@@ -34,6 +34,15 @@ const useStyles = makeStyles((theme) => ({
       margin: '40px auto',
     },
   },
+  fullWidth:{
+    [theme.breakpoints.down('md')]: {
+      width: "100vw",
+    position: "relative",
+    marginLeft: "-50vw",
+    left: "50%",
+    },
+   
+  }
 }));
 
 export default function Home() {
@@ -50,7 +59,7 @@ export default function Home() {
           </Box>
           <Box clone order={{ xs: 1, lg: 2 }}>
             <Grid item xs={12} lg={6}>
-              <Box >
+              <Box className={classes.fullWidth}>
                 <ImageGallery
                   items={carouselImages}
                   autoPlay={true}
