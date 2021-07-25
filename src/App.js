@@ -63,7 +63,7 @@ export default function App() {
     "/about",
     "/recipes",
     "/lifestyle",
-    "community",
+    "/community",
     "/tips",
   ];
 
@@ -72,6 +72,7 @@ export default function App() {
       <div className="App">
         <Switch>
           <Route path="/" component={Home} exact/>
+          <Route path="/recipes" component={Recipes} />
           <Route path="/about" component={About} />
         </Switch>
       </div>
