@@ -8,7 +8,7 @@ import { NavLink } from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
   header: {
     position: "fixed",
-    zIndex: "1",
+    zIndex: "5",
     width: '100%',
     top: '0',
     left: '0',
