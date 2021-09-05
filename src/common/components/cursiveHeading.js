@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
   mediaContainer: {
     marginRight: '0px',
     fontFamily: 'Italianno',
-    fontStyle: 'italic',
+    // fontStyle: 'italic',
     fontWeight: theme.typography.fontWeightBold,
   },
   divider: {

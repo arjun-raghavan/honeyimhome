@@ -7,19 +7,22 @@
         "imageAltText": "Chocolate CheeseCake"
     },
     "carouselImages": [
-        {
-          "original": "https://picsum.photos/id/1018/1000/600/",
-          "thumbnail": "https://picsum.photos/id/1018/250/150/"
-        },
-        {
-          "original": "https://picsum.photos/id/1015/1000/600/",
-          "thumbnail": "https://picsum.photos/id/1015/250/150/"
-        },
-        {
-          "original": "https://picsum.photos/id/1019/1000/600/",
-          "thumbnail": "https://picsum.photos/id/1019/250/150/"
-        }
-      ],
+      {
+        "id": 1,
+        "alt":"Dish name",
+        "original": "./assets/test1.jpeg"
+      },
+      {
+        "id": 2,
+        "alt":"Dish name",
+        "original": "./assets/test2.jpeg"
+      },
+      {
+        "id": 3,
+        "alt":"Dish name",
+        "original": "./assets/test3.jpeg"
+      }
+    ],
       "trendingRecipes": {
           "title": "Trending Recipes",
           "youTubeIds": ["nEa2Ex49xnM", "TJ5DtwAPbFA"]},

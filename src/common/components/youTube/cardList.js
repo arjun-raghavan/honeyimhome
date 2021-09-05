@@ -7,7 +7,6 @@ import CursiveHeading from '../cursiveHeading';
 
 const useStyles = makeStyles((theme) => ({
   list: {
-    display: 'flex',
     width: '100%',
     justifyContent: 'space-between',
     [theme.breakpoints.up('lg')]: {
@@ -30,13 +29,13 @@ export default function MediaCardList(props) {
   } = props;
 
   return (
-    <Box display='flex' flexDirection='column' alignItems='center'>
+    <div>
       <CursiveHeading content={title} showDivider />
-      <Box className={classes.list}>
+      <div className={classes.list}>
         {youTubeIds.map((youTubeId) => (
           <YouTubeCard youTubeId={youTubeId} className={classes.card} />
         ))}
-      </Box>
-    </Box>
+      </div>
+    </div>
   );
 }
