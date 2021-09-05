@@ -7,7 +7,7 @@ import homeData from "../../data/home.json";
 import LeftSection from './leftSection';
 import RightSection from './rightSection';
 import CenterSection from './mcenterSection';
-import {test1, test2, test3} from "../../common/assets";
+import {test1, test2, test3, test5, test7} from "../../common/assets";
 
 
 const RightSectionData = {
@@ -15,17 +15,17 @@ const RightSectionData = {
   recipes: [{
     recipeName: 'Lorem Ipsum is simply dummy text',
     recipeLink: 'https://www.youtube.com/channel/UC1b2d9J4rKEaBXk8UYMB9ew/videos',
-    recipeImage: test1,
+    recipeImage: test5,
   },
   {
     recipeName: 'Lorem Ipsum is simply dummy text',
     recipeLink: 'https://www.youtube.com/channel/UC1b2d9J4rKEaBXk8UYMB9ew/videos',
-    recipeImage: test2,
+    recipeImage: test7,
   },
   {
     recipeName: 'Lorem Ipsum is simply dummy text',
     recipeLink: 'https://www.youtube.com/channel/UC1b2d9J4rKEaBXk8UYMB9ew/videos',
-    recipeImage: test3,
+    recipeImage: test5,
   }],
 }
 
