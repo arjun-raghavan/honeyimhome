@@ -29,13 +29,28 @@ const RightSectionData = {
   }],
 }
 
+const LeftSectionData = {
+  recipes: [{
+    recipeName: 'Lorem Ipsum',
+    recipeDesc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
+    recipeLink: 'https://www.youtube.com/channel/UC1b2d9J4rKEaBXk8UYMB9ew/videos',
+    recipeImage: test1,
+  },
+  {
+    recipeName: 'Lorem Ipsum',
+    recipeDesc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
+    recipeLink: 'https://www.youtube.com/channel/UC1b2d9J4rKEaBXk8UYMB9ew/videos',
+    recipeImage: test2,
+  }],
+}
+
 export default function FirstSection() {
   const { monthFav, carouselImages, trendingRecipes, cooking } = homeData;
   
   return (
       <Grid container item spacing={3} justify="flex-start">
         <Box clone order={{ xs: 2, md: 1 }}>
-         <LeftSection/>
+         <LeftSection recipesData={LeftSectionData}/>
         </Box>
         <Box clone order={{ xs: 1, md: 2 }}>
           <CenterSection/>

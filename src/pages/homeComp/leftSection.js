@@ -1,42 +1,132 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
-
-import LeftSectionCard from "./leftSectionCard";
-
-const monthFavData = {
-  title: "Favorite of the Month",
-  subTitle: "Chocolate Cheesecake",
-  description:
-    "No bake, No gelatin, eggless, without spring form pam, No bake, No gelatin, eggless, without spring form pam",
-  imageSrc:
-    "https://maryzkitchen.com/wp-content/uploads/2020/06/101887999_3074414372602163_3232137033983983616_n.jpg",
-  imageAltText: "Chocolate CheeseCake",
-};
+import Divider from "@material-ui/core/Divider";
+import { Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   leftSection: {
-    margin: "12px 10%",
-    [theme.breakpoints.up("sm")]: {
-      margin: "0",
-      display: "flex",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  },
+  recipeCardContainer: {
+    display: "flex",
+    flexDirection: "column",
+    gap: "12px",
+    alignItems: "center",
+
+    [theme.breakpoints.only("sm")]: {
+      flexDirection: "row",
       gap: "16px",
+      alignItems: "flex-start",
     },
+  },
+  recipeCard: {
+    display: "flex",
+    alignItems: "center",
+    textAlign: "center",
+    justifyContent: "space-around",
+    flexDirection: "column",
+    maxWidth: "290px",
+
+    "& .recipe-image-link": {
+      display: "contents",
+    },
+
+    "& .recipe-link": {
+      textDecoration: "none",
+      color: theme.palette.text.primary,
+      fontWeight: "bold",
+    },
+
+    "& .recipe-image": {
+      width: "100%",
+      marginBottom: "8px",
+    },
+
+    "& .recipe-name": {
+      fontWeight: "400",
+      fontFamily: '"Gotham SSm A", sans-serif',
+      fontSize: "16px",
+      lineHeight: "23px",
+      width: "42%",
+      [theme.breakpoints.up("sm")]: {
+        width: "80%",
+      },
+    },
+
+    '& .recipe-desc': {
+      fontFamily: '"Chronicle SSm A", serif',
+      lineHeight: '23px',
+    }
+  },
+  divider: {
+    display: "none",
+    width: "60%",
+    height: "1px",
     [theme.breakpoints.up("md")]: {
+      margin: "0 auto 12px auto",
       display: "block",
     },
   },
 }));
 
-export default function LeftSection() {
+const RecipeCard = (props) => {
   const classes = useStyles();
-  const { monthFav } = monthFavData;
+  const { recipeName, recipeLink, recipeImage, recipeDesc } = props;
+
+  return (
+    <>
+      <div className={classes.recipeCard}>
+        <a
+          className="recipe-image-link"
+          href={recipeLink}
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img
+            className="recipe-image"
+            src={recipeImage}
+            alt={recipeName}
+          ></img>
+        </a>
+        <Typography component={"h2"} className="recipe-name" gutterBottom>
+          <a
+            className="recipe-link"
+            href={recipeLink}
+            rel="noreferrer"
+            target="_blank"
+          >
+            {recipeName}
+          </a>
+        </Typography>
+        <Typography  paragraph={true} className="recipe-desc" gutterBottom>
+          {recipeDesc}
+        </Typography>
+      </div>
+      <Divider
+        variant="middle"
+        orientation="horizontal"
+        className={classes.divider}
+      />
+    </>
+  );
+};
+
+export default function LeftSection(props) {
+  const classes = useStyles();
+  const {
+    recipesData: { recipes = [] },
+  } = props;
 
   return (
     <Grid item xs={12} md={3} className={classes.leftSection}>
-      <LeftSectionCard data={monthFav} />
-      <LeftSectionCard data={monthFav} />
-      <LeftSectionCard data={monthFav} />
+      <div className={classes.recipeCardContainer}>
+        {recipes.map((recipe) => {
+          return <RecipeCard {...recipe} />;
+        })}
+      </div>
     </Grid>
   );
 }
