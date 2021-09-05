@@ -13,7 +13,7 @@ const secondSectionData = {
     buttonTitle: "Get the Recipe",
     buttonLink: "./recipes",
     youTubeId: "k1F9qTSEods",
-    allRecipesLink: 'https://youtube.com/',
+    allRecipesLink: 'https://www.youtube.com/channel/UC1b2d9J4rKEaBXk8UYMB9ew/videos',
     allRecipesContent: 'See All Videos >'
   };
 
