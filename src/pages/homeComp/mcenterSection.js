@@ -12,6 +12,9 @@ const useStyles = makeStyles((theme) => ({
     margin: "0 auto 4px auto",
     width: "45%",
     height: "1px",
+    [theme.breakpoints.up("md")]: {
+      marginBottom: '16px'
+    },
   },
   textContainer: {
     padding: "5%",
