@@ -1,6 +1,5 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import Grid from "@material-ui/core/Grid";
 import Divider from "@material-ui/core/Divider";
 import { Typography } from "@material-ui/core";
 
@@ -56,10 +55,10 @@ const useStyles = makeStyles((theme) => ({
       },
     },
 
-    '& .recipe-desc': {
+    "& .recipe-desc": {
       fontFamily: '"Chronicle SSm A", serif',
-      lineHeight: '23px',
-    }
+      lineHeight: "23px",
+    },
   },
   divider: {
     display: "none",
@@ -68,6 +67,13 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("md")]: {
       margin: "0 auto 12px auto",
       display: "block",
+    },
+  },
+  sectionDivider: {
+    display: "block",
+    width: "45%",
+    [theme.breakpoints.up("md")]: {
+      display: "none",
     },
   },
 }));
@@ -101,7 +107,7 @@ const RecipeCard = (props) => {
             {recipeName}
           </a>
         </Typography>
-        <Typography  paragraph={true} className="recipe-desc" gutterBottom>
+        <Typography paragraph={true} className="recipe-desc" gutterBottom>
           {recipeDesc}
         </Typography>
       </div>
@@ -121,12 +127,17 @@ export default function LeftSection(props) {
   } = props;
 
   return (
-    <Grid item xs={12} md={3} className={classes.leftSection}>
+    <>
       <div className={classes.recipeCardContainer}>
         {recipes.map((recipe) => {
           return <RecipeCard {...recipe} />;
         })}
       </div>
-    </Grid>
+      <Divider
+        variant="middle"
+        orientation="horizontal"
+        className={[classes.divider, classes.sectionDivider]}
+      />
+    </>
   );
 }

@@ -28,11 +28,6 @@ export default function Home() {
   return (
     <AppLayout>
      <FirstSection/>
-      <Divider
-        variant="middle"
-        orientation="horizontal"
-        className={classes.divider}
-      />
       <Grid container item>
         <Grid item xs={12}>
           <YouTubeCard data={cooking} />

@@ -1,6 +1,5 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import Grid from "@material-ui/core/Grid";
 import Divider from "@material-ui/core/Divider";
 import { Typography } from "@material-ui/core";
 
@@ -72,6 +71,14 @@ const useStyles = makeStyles((theme) => ({
       display: 'block',
     },
   },
+  sectionDivider: {
+    display: "block",
+    width: "45%",
+    margin: '16px auto',
+    [theme.breakpoints.up("md")]: {
+      display: "none",
+    },
+  },
 }));
 
 const RecipeCard = (props) => {
@@ -111,19 +118,25 @@ export default function RightSection(props) {
   const { recipesData: {title = '', recipes = []} } = props;
 
   return (
-    <Grid item xs={12} md={3} className={classes.rightSection}>
+    <>
       <Heading
         content={title}
         variant="h6"
         component="h3"
         fontStyle="italic"
-        headingStyle='secondary'
+        headingType='secondary'
+        style={{ lineHeight: "21px"}}
       />
       <div className={classes.recipeCardContainer}>
         {recipes.map((recipe) => {
           return <RecipeCard {...recipe} />;
         })}
       </div>
-    </Grid>
+      <Divider
+        variant="middle"
+        orientation="horizontal"
+        className={[classes.divider, classes.sectionDivider]}
+      />
+      </>
   );
 }

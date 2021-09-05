@@ -13,13 +13,12 @@ const headingMap = {
 const useStyles = makeStyles({
   container: {
     fontFamily: '"Chronicle SSm A", serif',
-    backgroundImage: (props) => `url(${headingMap[props.headingStyle] || headingMap.primary})`,
+    backgroundImage: (props) => `url(${headingMap[props.headingType] || headingMap.primary})`,
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center bottom",
     fontSize: (props) => props.fontSize,
     fontStyle: (props) => props.fontStyle || 'normal',
-    lineHeight: "21px",
-    backgroundSize: "60px 15px",
+    backgroundSize: "31% 15px",
     paddingBottom: '20px',
   },
 });
