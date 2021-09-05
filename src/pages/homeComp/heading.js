@@ -24,7 +24,7 @@ const useStyles = makeStyles({
 });
 
 export default function Heading(props) {
-  const { content = '',...restProps } = props;
+  const { content = '',headingType, fontSize, fontStyle, ...restProps } = props;
   const classes = useStyles(props);
 
   return (

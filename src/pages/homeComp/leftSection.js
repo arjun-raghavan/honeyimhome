@@ -72,7 +72,9 @@ const useStyles = makeStyles((theme) => ({
   sectionDivider: {
     display: "block",
     width: "45%",
+    height: "1px",
     [theme.breakpoints.up("md")]: {
+      margin: "0 auto 12px auto",
       display: "none",
     },
   },
@@ -107,7 +109,7 @@ const RecipeCard = (props) => {
             {recipeName}
           </a>
         </Typography>
-        <Typography paragraph={true} className="recipe-desc" gutterBottom>
+        <Typography paragraph className="recipe-desc" gutterBottom>
           {recipeDesc}
         </Typography>
       </div>
@@ -129,14 +131,14 @@ export default function LeftSection(props) {
   return (
     <>
       <div className={classes.recipeCardContainer}>
-        {recipes.map((recipe) => {
-          return <RecipeCard {...recipe} />;
+        {recipes.map((recipe, index) => {
+          return <RecipeCard {...recipe} key={index}/>;
         })}
       </div>
       <Divider
         variant="middle"
         orientation="horizontal"
-        className={[classes.divider, classes.sectionDivider]}
+        className={classes.sectionDivider}
       />
     </>
   );

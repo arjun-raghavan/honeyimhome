@@ -8,6 +8,7 @@ import YouTubeCard from "../common/components/youTube/youTubeCard";
 import homeData from "../data/home.json";
 
 import { FirstSection } from "./homeComp";
+import { SecondSection } from "./secondSection";
 
 const useStyles = makeStyles((theme) => ({
   divider: {
@@ -20,19 +21,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-
 export default function Home() {
   const classes = useStyles();
   const { cooking } = homeData;
-  
+
   return (
     <AppLayout>
-     <FirstSection/>
-      <Grid container item>
-        <Grid item xs={12}>
-          <YouTubeCard data={cooking} />
-        </Grid>
-      </Grid>
+      <FirstSection />
+      <SecondSection />
     </AppLayout>
   );
 }

@@ -1,14 +1,12 @@
 import React from "react";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
-
-import homeData from "../../data/home.json";
+import { makeStyles } from "@material-ui/core/styles";
 
 import LeftSection from "./leftSection";
 import RightSection from "./rightSection";
 import CenterSection from "./mcenterSection";
 import { test1, test2, test3, test5, test7 } from "../../common/assets";
-import { makeStyles } from "@material-ui/core/styles";
 
 const RightSectionData = {
   title: "Recipes We are loving",
@@ -88,7 +86,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function FirstSection() {
-  const { monthFav, carouselImages, trendingRecipes, cooking } = homeData;
   const classes = useStyles();
   return (
     <Grid container item spacing={3} justify="flex-start">

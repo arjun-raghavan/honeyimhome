@@ -75,6 +75,7 @@ const useStyles = makeStyles((theme) => ({
     display: "block",
     width: "45%",
     margin: '16px auto',
+    height: "1px",
     [theme.breakpoints.up("md")]: {
       display: "none",
     },
@@ -128,14 +129,14 @@ export default function RightSection(props) {
         style={{ lineHeight: "21px"}}
       />
       <div className={classes.recipeCardContainer}>
-        {recipes.map((recipe) => {
-          return <RecipeCard {...recipe} />;
+        {recipes.map((recipe, index) => {
+          return <RecipeCard {...recipe} key={index}/>;
         })}
       </div>
       <Divider
         variant="middle"
         orientation="horizontal"
-        className={[classes.divider, classes.sectionDivider]}
+        className={classes.sectionDivider}
       />
       </>
   );
