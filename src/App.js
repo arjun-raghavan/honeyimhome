@@ -18,10 +18,7 @@ import {
   PageNotFound,
 } from "./pages";
 import logo from "./common/assets/logo.png";
-import Box from "@material-ui/core/Box";
-import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
-import { NewNav } from "./common";
 
 function a11yProps(index) {
   return {

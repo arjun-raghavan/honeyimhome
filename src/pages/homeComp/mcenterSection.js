@@ -65,7 +65,7 @@ export default function CenterSection(props) {
         showThumbnails={false}
         showPlayButton={false}
         showFullscreenButton={false}
-        slideDuration={2000}
+        slideDuration={5}
         slideInterval={5000}
         fullscreen
         renderItem={(item) => {
