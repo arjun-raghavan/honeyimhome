@@ -11,7 +11,7 @@ import {
 import {
   Home,
   About,
-  Recipes,
+  RecipeCategory,
   LifeStyle,
   Community,
   Tips,
@@ -69,7 +69,7 @@ export default function App() {
       <div className="App">
         <Switch>
           <Route path="/" component={Home} exact/>
-          <Route path="/recipes" component={Recipes} />
+          <Route path="/recipes" component={RecipeCategory} />
           <Route path="/about" component={About} />
         </Switch>
       </div>

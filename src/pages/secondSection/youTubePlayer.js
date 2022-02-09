@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
 
 import YouTube from "../../common/components/youTube/youTube";
-import Heading from "../homeComp/heading";
+import Heading from "../common/heading";
 import { Button } from "@material-ui/core";
 import Hidden from "@material-ui/core/Hidden";
 import { NavLink } from "react-router-dom";

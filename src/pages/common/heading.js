@@ -4,6 +4,7 @@ import { Typography } from "@material-ui/core";
 
 import { headingStyle1, headingStyle2, headingStyle3 } from "../../common/assets";
 
+// shows diff bottom images
 const headingMap = {
   primary: headingStyle1,
   secondary: headingStyle2,
@@ -13,7 +14,7 @@ const headingMap = {
 const useStyles = makeStyles({
   container: {
     fontFamily: '"Chronicle SSm A", serif',
-    backgroundImage: (props) => `url(${headingMap[props.headingType] || headingMap.primary})`,
+    backgroundImage: (props) => props.headingType ? `url(${headingMap[props.headingType]})` : '',
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center bottom",
     fontSize: (props) => props.fontSize,

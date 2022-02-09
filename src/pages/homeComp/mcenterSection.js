@@ -5,7 +5,7 @@ import ImageGallery from "react-image-gallery";
 import Divider from "@material-ui/core/Divider";
 import { Typography } from "@material-ui/core";
 
-import Heading from "./heading";
+import Heading from "../common/heading";
 
 const useStyles = makeStyles((theme) => ({
   divider: {
