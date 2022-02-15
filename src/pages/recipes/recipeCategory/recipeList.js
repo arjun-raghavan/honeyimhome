@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
   listContainer: {
     display: "grid",
     grid: "max-content / auto",
-    gap: "10px",
+    gap: "16px",
     marginBottom: "32px",
     [theme.breakpoints.up("sm")]: {
       grid: "max-content / auto auto auto",
