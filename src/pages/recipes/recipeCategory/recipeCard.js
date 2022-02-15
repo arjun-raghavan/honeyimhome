@@ -19,18 +19,20 @@ import {
 const useStyles = makeStyles((theme) => ({
   root: {
     fontFamily: '"Gotham SSm A", sans-serif',
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
   },
   image: {
     aspectRatio: "12/9",
     transform: "scale(1)",
-    transition: "transform .5s",
+    transition: "transform .9s",
 
     "&:hover": {
       transform: "scale(1.1)",
     },
   },
   heading: {
-    padding: "0",
     marginBottom: "8px",
   },
   text: {
@@ -40,6 +42,14 @@ const useStyles = makeStyles((theme) => ({
     "&:hover": {
       color: theme.palette.text.primaryDark,
     },
+  },
+  contentArea: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+  },
+  actionArea: {
+    padding: "0 8px 16px",
   },
 }));
 
@@ -51,7 +61,7 @@ export default function RecipeCard(props) {
 
   return (
     <Card className={classes.root}>
-      <CardActionArea>
+      <div>
         <NavLink to="/">
           <CardMedia
             component="img"
@@ -61,11 +71,11 @@ export default function RecipeCard(props) {
             className={classes.image}
           />
         </NavLink>
-      </CardActionArea>
-      <CardContent>
         <Button className={[classes.text, classes.heading]} color="primary">
           {categoryName}
         </Button>
+      </div>
+      <div className={classes.actionArea}>
         <Button
           component={NavLink}
           to={"https://www.youtube.com/channel/UC1b2d9J4rKEaBXk8UYMB9ew/videos"}
@@ -77,7 +87,7 @@ export default function RecipeCard(props) {
           Watch
           {<YouTubeIcon />}
         </Button>
-      </CardContent>
+      </div>
     </Card>
   );
 }

@@ -54,17 +54,19 @@ const useStyles = makeStyles((theme) => ({
   },
   listContainer: {
     display: "grid",
-    grid: "auto / auto",
-    gap: "3%",
+    grid: "max-content / auto",
+    gap: "10px",
     marginBottom: "32px",
     [theme.breakpoints.up("sm")]: {
-      grid: "auto / auto auto auto",
+      grid: "max-content / auto auto auto",
     },
     [theme.breakpoints.up("md")]: {
-      grid: "auto / auto auto auto auto",
+      grid: "max-content / auto auto auto auto",
     },
-    "& .sas > div:nth-child(4)": {
-      visibility: "hidden",
+    [theme.breakpoints.only("sm")]: {
+      "& > div:last-child": {
+        display: "none",
+      },
     },
   },
 }));
