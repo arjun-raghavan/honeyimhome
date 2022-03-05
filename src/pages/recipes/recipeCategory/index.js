@@ -37,7 +37,7 @@ export default function RecipeCategory() {
   return (
     <AppLayout>
       <div className={classes.container}>
-        <Heading content={"Recipes"} variant="h4" component="h2" />
+        <Heading content={"Recipes"} variant="h4" component="h1" />
         <RecipeSearch />
         <CategoryIcons />
         <RecipeList />

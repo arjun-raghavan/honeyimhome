@@ -34,6 +34,12 @@ const CategoryIconsData = [
       "https://www.youtube.com/channel/UC1b2d9J4rKEaBXk8UYMB9ew/videos",
     image: test8,
   },
+  {
+    categoryName: "Snacks",
+    categoryLink:
+      "https://www.youtube.com/channel/UC1b2d9J4rKEaBXk8UYMB9ew/videos",
+    image: test8,
+  },
 ];
 
 const useStyles = makeStyles((theme) => ({

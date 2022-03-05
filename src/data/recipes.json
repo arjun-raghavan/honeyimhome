@@ -1,38 +1,114 @@
-{
-    "sections": [
-        {
-            "title":" Baking - Breads, Buns, cakes",
-            "cards": [
-                {
-                    "title": "BlueBerry Muffins",
-                    "description": " Some Description",
-                    "instagramLink": "https://instagram.com",
-                    "youTubeId": "https://youTube.com",
-                    "recipeBtnTitle": "View Recipe"
-                },
-                {
-                    "title": "BlueBerry Muffins",
-                    "description": " Some Description",
-                    "instagramLink": "https://instagram.com",
-                    "youTubeId": "https://youTube.com",
-                    "recipeBtnTitle": "View Recipe"
-                },
-                {
-                    "title": "BlueBerry Muffins",
-                    "description": " Some Description",
-                    "instagramLink": "https://instagram.com",
-                    "youTubeId": "https://youTube.com",
-                    "recipeBtnTitle": "View Recipe"
-                },
-                {
-                    "title": "BlueBerry Muffins",
-                    "description": " Some Description",
-                    "instagramLink": "https://instagram.com",
-                    "youTubeId": "https://youTube.com",
-                    "recipeBtnTitle": "View Recipe"
-                }
-
-            ]
-        }
+[
+  {
+    "name": "Pinwheel Aloo Paneer | Breakfast and snack recipe| Tiffin box recipes",
+    "created": "",
+    "img": [],
+    "shortDescription": "with anchor tags",
+    "categories": ["breakfast"],
+    "ingredients": [
+      {
+        "name": "",
+        "qty": "",
+        "measurement": ""
+      }
+    ],
+    "directions": ["with hyperlinks", "step2"],
+    "tips": [],
+    "social": [
+      {
+        "name": "instagram",
+        "url": "",
+        "icon": ""
+      },
+      {
+        "name": "youtube",
+        "url": "https://www.youtube.com/watch?v=IRdKqb93ylY&list=PLXxhIwYn9PbV3f4LcPXYpbG0Bh6L_Psg_",
+        "icon": ""
+      }
     ]
-}
+  },
+  {
+    "name": "Puffy Bhature/ Bhatura every single time | without yeast | Instant recipe",
+    "created": "",
+    "img": [],
+    "shortDescription": "with anchor tags",
+    "categories": ["breakfast"],
+    "ingredients": [
+      {
+        "name": "",
+        "qty": "",
+        "measurement": ""
+      }
+    ],
+    "directions": ["with hyperlinks", "step2"],
+    "tips": [],
+    "social": [
+      {
+        "name": "instagram",
+        "url": "",
+        "icon": ""
+      },
+      {
+        "name": "youtube",
+        "url": "https://www.youtube.com/watch?v=9T0ZtKntgrk&list=PLXxhIwYn9PbV3f4LcPXYpbG0Bh6L_Psg_&index=2",
+        "icon": ""
+      }
+    ]
+  },
+  {
+    "name": "Amritsari Aloo Paratha | Perfect tangy spicy aloo paratha",
+    "created": "",
+    "img": [],
+    "shortDescription": "with anchor tags",
+    "categories": ["breakfast"],
+    "ingredients": [
+      {
+        "name": "",
+        "qty": "",
+        "measurement": ""
+      }
+    ],
+    "directions": ["with hyperlinks", "step2"],
+    "tips": [],
+    "social": [
+      {
+        "name": "instagram",
+        "url": "",
+        "icon": ""
+      },
+      {
+        "name": "youtube",
+        "url": "https://www.youtube.com/watch?v=Lde076hkYCc&list=PLXxhIwYn9PbV3f4LcPXYpbG0Bh6L_Psg_&index=3",
+        "icon": ""
+      }
+    ]
+  },
+  {
+    "name": "Roasted Tomato Soup",
+    "created": "",
+    "img": [],
+    "shortDescription": "with anchor tags",
+    "categories": ["Snacks"],
+    "ingredients": [
+      {
+        "name": "",
+        "qty": "",
+        "measurement": ""
+      }
+    ],
+    "directions": ["with hyperlinks", "step2"],
+    "tips": [],
+    "social": [
+      {
+        "name": "instagram",
+        "url": "",
+        "icon": ""
+      },
+      {
+        "name": "youtube",
+        "url": "https://www.youtube.com/watch?v=jKUG9wvByEk&list=PLXxhIwYn9PbVyla0_kv0nolitDK8h2H6y",
+        "icon": ""
+      }
+    ]
+  }
+]

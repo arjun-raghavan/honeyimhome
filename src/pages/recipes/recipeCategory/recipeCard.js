@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    marginBottom: "8px",
+    margin: "8px 0",
   },
   text: {
     textAlign: "left",

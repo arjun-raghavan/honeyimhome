@@ -55,20 +55,12 @@ const Logo = () => (
 export default function App() {
   const classes = useStyles();
 
-  const allTabs = [
-    "/",
-    "/about",
-    "/recipes",
-    "/lifestyle",
-    "/community",
-    "/tips",
-  ];
-
   return (
     <Router>
       <div className="App">
         <Switch>
-          <Route path="/" component={Home} exact/>
+          <Route path="/" component={Home} exact />
+          <Route path="/recipes" component={RecipeCategory} />
           <Route path="/recipes" component={RecipeCategory} />
           <Route path="/about" component={About} />
         </Switch>
