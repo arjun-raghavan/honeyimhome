@@ -19,6 +19,8 @@ import {
 } from "./pages";
 import logo from "./common/assets/logo.png";
 import { makeStyles } from "@material-ui/core/styles";
+import RecipeList from "./pages/recipes/recipeList";
+import RecipeDetail from "./pages/recipes/recipeDetail";
 
 function a11yProps(index) {
   return {
@@ -49,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
 
 const Logo = () => (
   <Button component={NavLink} to={"/"}>
-    <img src={logo} height="50" />
+    <img src={logo} height="50" alt="logo" />
   </Button>
 );
 export default function App() {
@@ -60,7 +62,8 @@ export default function App() {
       <div className="App">
         <Switch>
           <Route path="/" component={Home} exact />
-          <Route path="/recipes" component={RecipeCategory} />
+          <Route path="/recipes/:category/:id" component={RecipeDetail} />
+          <Route path="/recipes/:category/" component={RecipeList} />
           <Route path="/recipes" component={RecipeCategory} />
           <Route path="/about" component={About} />
         </Switch>

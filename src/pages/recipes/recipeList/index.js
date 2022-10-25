@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function RecipeCategory() {
+export default function RecipeList() {
   const classes = useStyles();
 
   return (
